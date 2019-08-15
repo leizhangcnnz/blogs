@@ -1,22 +1,37 @@
 {
-  "name": "blogs",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "https://leizhangcnnz.github.io/blogs",
-  "dependencies": {
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "react-scripts": "1.1.4"
-  },
+  "name": "chitchat",
+  "version": "1.0.0",
+  "description": "Let's talk!",
+  "main": "index.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "build": "webpack --config webpack/webpack.prod.js",
+    "dev": "webpack-dev-server --config webpack/webpack.dev.js"
+  },
+  "author": "lei.zhang",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@192.168.1.24:8022/leizhang/chitchat.git"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
-    "gh-pages": "^1.1.0"
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "react-redux": "^7.1.0",
+    "react-router-dom": "^5.0.1",
+    "redux": "^4.0.4",
+    "redux-saga": "^1.0.5",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^4.2.1"
   }
 }
