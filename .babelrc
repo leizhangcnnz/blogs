@@ -9,6 +9,15 @@
         "regenerator": true,
         "useESModules": false
       }
+    ],
+    // antd lazy loading
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "libraryDirectory": "es",
+        "style": "css"
+      }
     ]
   ]
 }

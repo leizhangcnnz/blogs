@@ -4,7 +4,7 @@
   "description": "Let's talk!",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack/webpack.prod.js",
+    "build": "webpack -p --config webpack/webpack.prod.js",
     "dev": "webpack-dev-server --config webpack/webpack.dev.js"
   },
   "author": "lei.zhang",
@@ -14,6 +14,7 @@
   },
   "license": "UNLICENSED",
   "dependencies": {
+    "antd": "^3.21.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
@@ -23,12 +24,18 @@
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
+    "babel-plugin-import": "^1.12.0",
     "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
     "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
     "react-redux": "^7.1.0",
     "react-router-dom": "^5.0.1",
     "redux": "^4.0.4",
     "redux-saga": "^1.0.5",
+    "style-loader": "^1.0.0",
+    "terser-webpack-plugin": "^1.4.1",
     "webpack": "^4.39.1",
     "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.7.2",

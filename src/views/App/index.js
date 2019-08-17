@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { increment } from '../../actions/index';
 import { Link } from "react-router-dom";
-
+import { increment } from '../../actions/index';
+import { Button, Tag } from 'antd';
 
 class App extends React.Component {
 
@@ -34,9 +34,9 @@ class App extends React.Component {
                 </nav>
 
                 <br/>
-                <div>redux & redux-saga Test</div>
-                <div>current number： {this.props.number} <button onClick={()=>this.onClick()}>Click +1</button></div>
-                <div>current number： {this.props.number} <button onClick={()=>this.onClick2()}>Click 2 seconds later +1</button></div>
+                <Tag>redux & redux-saga Test</Tag>
+                <div>current number： {this.props.number} <Button type='primary' onClick={()=>this.onClick()}>Click +1</Button></div>
+                <div>current number： {this.props.number} <Button type='primary' onClick={()=>this.onClick2()}>Click 2 seconds later +1</Button></div>
             </div>
         );
     }
