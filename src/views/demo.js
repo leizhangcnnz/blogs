@@ -1,10 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from "react-router-dom";
-import { increment } from '../../actions/index';
+import { increment } from '../actions/index';
 import { Button, Tag } from 'antd';
 
-class App extends React.Component {
+class Demo extends React.Component {
 
     constructor(props) {
         super(props);
@@ -41,8 +41,3 @@ class App extends React.Component {
         );
     }
 }
-export default connect(
-    state => ({
-        number: state.number
-    })
-)(App);
