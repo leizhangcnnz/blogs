@@ -1,0 +1,14 @@
+.ant-layout-content {
+  flex: auto;
+  margin: 4px 16px;
+  padding: 24;
+  background-color: white;
+  min-height: 810px;
+}
+
+.ant-layout-sider {
+  transition: all 0.2s;
+  position: relative;
+  margin: 4px 0px;
+  background-color: white;
+}

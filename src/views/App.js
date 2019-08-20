@@ -22,7 +22,7 @@ class App extends React.Component {
         </Layout>
         <Layout>
           <Sider trigger={null} collapsible collapsed={this.state.collapsed}>
-            <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
+            <Menu mode="inline" defaultSelectedKeys={['1']}>
               <Menu.Item key="1">
               <Icon
                 className="trigger"
@@ -62,14 +62,7 @@ class App extends React.Component {
             </Menu>
           </Sider>
           <Layout>
-            <Content
-              style={{
-                margin: '24px 16px',
-                padding: 24,
-                background: '#fff',
-                minHeight: 280,
-              }}
-            >
+            <Content>
               Content
             </Content>
           </Layout>
