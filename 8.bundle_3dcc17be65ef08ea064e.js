@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{107:function(n,e,t){"use strict";t.r(e);var c=t(0),u=t.n(c),a=t(8);e.default=Object(a.f)((function(){return u.a.createElement("div",null,"安利.")}))}}]);
